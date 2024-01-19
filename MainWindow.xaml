@@ -1,0 +1,22 @@
+﻿<Window x:Class="Reg_Autor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reg_Autor"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="800" Width="800" FontSize="20">
+    <StackPanel>
+        <TextBlock Text="Логин" />
+        <TextBox Name="TB_LOGIN"/>
+        <CheckBox Content="Войти по Email" x:Name="Log_Email"/>
+        <TextBlock Text="Пароль"/>
+        <PasswordBox Name="TB_PASSWORD" PasswordChar="*"/>
+        <TextBox x:Name="TB_PASSWORD1" Visibility="Hidden"/>
+        <Button Width="40" Height="40" Click="Button_Click" Name="BUTN_PAS" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="TB_Answer"/>
+        <TextBlock x:Name="TB_Answer1"/>
+        <Button Content="Авторизоваться"   Name="register" Click="register_Click"/>
+        <Button Content="Окно регистрация"  Name="autorisation" Click="autorisation_Click"/>
+    </StackPanel>
+</Window>
